@@ -1,0 +1,41 @@
+<html>
+  <head> </head>
+  <body>
+    <h1>Line Break, Horizontal Rule & Entities</h1>
+    <h2>Line Breaks</h2>
+    <p>
+      Bu yazı buradan sonra <br />
+      alt satırda gözükecektir ve <br />
+      tekrar alt satıra inmiştir <br /><br />
+      2 alt satıra indim
+    </p>
+
+    <h2>Horizontal Rules</h2>
+    <p>This is the first paragraph</p>
+    <!-- Yukardaki paragraftan sonra hr ile alt satırda yatay bir çizgi görüntülenir -->
+    <!-- align parametresi çizginin yatayda nerede konumlanacağını belirler. width parametresi çizginin genişliğini yani uzunluğunu belirler. -->
+    <hr align="center" width="300" size="20" />
+    <p>This is the second paragraph</p>
+
+    <h2>Pre Tag</h2>
+    <!-- Pre etiketiyle yazdığın ifadeler nasıl yazıldıysa tarayıcıda öyle görüntülenir. Örneğin normalde birden fazla boşluk bıraksanız bile tarayıcıda tek boşluk olarak görütnülenir. Ama pre etiketiyle siz nasıl boşluk nasıl satır bırakırsanız olduğu gibi tarayıcıda o şekilde görüntülenir. Çok nadir durumlar dışında kullanılmaması tavsiye edilir. -->
+    <pre>
+      Hello       World
+
+          Hello
+              Again
+    </pre>
+
+    <!-- Örneğin ekranda metin olarak <h1> This is a heading</h1> yazısını yazmak istiyoruz. Fakat eğer bunu olduğu gibi pre veya code etiketleri arasında yazarsanız bunu tarayıcı html etiketi olarak yorumlar ve h1 etiketi görevini yerine getirir. Fakat biz istiyoruz ki <h1> etiketi olarak yazılsın yani görevini yerine getirmesin -->
+    <code>
+      <!-- tarayıcı h1'i etiket olarak yorumlar -->
+      <h1>This is a heading</h1>
+      <!-- ekranda  metin olarak <h1> This is a heading</h1> yazısı çıkar-->
+      &lt;h1&gt;This is a heading &lt;/h1&gt;
+      <!-- &nbsp; boşluk(bildiğimiz space tuşuna basılmasıyla oluşandan) bırakılmasını sağlar. -->
+      <p>This is the first &nbsp;&nbsp;&nbsp; paragraph</p>
+
+      <p>Copyright &copy; 2024</p>
+    </code>
+  </body>
+</html>
